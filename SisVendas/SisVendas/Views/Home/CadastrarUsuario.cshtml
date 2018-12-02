@@ -1,4 +1,5 @@
 ﻿
+@model Usuario
 @{
     ViewData["Title"] = "Cadastrar Usuario";
 }
@@ -6,6 +7,16 @@
 
 <div class="container FormCadastroUsuario" style="margin-top: 1em;">
     <!-- Sign up form -->
+    
+    @*@using (Html.BeginForm("Adiciona", "Usuario", FormMethod.Post))
+    {
+        @Html.LabelFor(m => m.Nome, "Nome:")
+        @Html.TextBoxFor(m => m.Nome, new{@class= "form-control", placeholder = "Nome" })
+
+
+    }*@
+    
+
     <form method="post">
         <!-- Sign up card -->
         <div class="card person-card">

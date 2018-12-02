@@ -3,8 +3,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SisVendas.Models
 {
-    public class Usuario
+    public class Usuario : BaseModel
     {
+        public Usuario()
+        {
+        }
+
         [Key]
         public int UsuarioId { get; set; }
 
