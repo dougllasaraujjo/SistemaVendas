@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewData["Title"] = "Cadastrar Usuario";
+}
+
+
+<div class="container FormCadastroUsuario" style="margin-top: 1em;">
+    <!-- Sign up form -->
+    <form method="post">
+        <!-- Sign up card -->
+        <div class="card person-card">
+            <div class="card-body">
+                <!-- Sex image -->
+                <img id="img_sex" class="person-img"
+                     src="~/images/cadastroUsuario.PNG">
+                <h2 id="who_message" class="card-title">Nível de acesso</h2>
+                <!-- First row (on medium screen) -->
+                <div class="row">
+                    <div class="form-group col-md-2">
+                        <select id="nivelAcesso" class="form-control">
+                            <option value="0">Usuário</option>
+                            <option value="1">Administrador</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <input id="first_name" type="text" class="form-control" placeholder="Nome" required>
+             
+                    </div>
+                    <div class="form-group col-md-5">
+                        <input id="last_name" type="text" class="form-control" placeholder="Sobrenome">
+              
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div>
+                        <h2 class="card-title">Dados para contato</h2>
+                        <div class="form-group">
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="exemplo@gmail.com" required>
+             
+                        </div>
+                        <div class="form-group">
+                            <label for="tel" class="col-form-label">Telefone / Celular</label>
+                            <input type="text" class="form-control" id="tel" placeholder="(11) 00000-0000" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Segurança!</h2>
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <input type="password" class="form-control" id="senha" placeholder="Digite a senha do usuário" required>
+             
+                        </div>
+                        <div class="form-group">
+                            <label for="password_conf">Confirme a senha</label>
+                            <input type="password" class="form-control" id="ConfirmaSenha" placeholder="Repita a senha" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 1em;">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
+        </div>
+    </form>
+</div>
+
